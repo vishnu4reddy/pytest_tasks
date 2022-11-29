@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="3" time="0.087" timestamp="2022-11-28T12:42:09.403188" hostname="BAN-LAP-VREDDY"><testcase classname="test_basic_fixture" name="test_comparewithAA" time="0.001"><failure message="AssertionError: aa and zz comparison failed&#10;assert 25 == 35">supply_AA_BB_CC = [25, 35, 45]
+
+    def test_comparewithAA(supply_AA_BB_CC):
+    	zz=35
+&gt;   	assert supply_AA_BB_CC[0]==zz,"aa and zz comparison failed"
+E    AssertionError: aa and zz comparison failed
+E    assert 25 == 35
+
+test_basic_fixture.py:11: AssertionError</failure></testcase><testcase classname="test_basic_fixture" name="test_comparewithBB" time="0.001" /><testcase classname="test_basic_fixture" name="test_comparewithCC" time="0.001"><failure message="AssertionError: cc and zz comparison failed&#10;assert 45 == 35">supply_AA_BB_CC = [25, 35, 45]
+
+    def test_comparewithCC(supply_AA_BB_CC):
+    	zz=35
+&gt;   	assert supply_AA_BB_CC[2]==zz,"cc and zz comparison failed"
+E    AssertionError: cc and zz comparison failed
+E    assert 45 == 35
+
+test_basic_fixture.py:19: AssertionError</failure></testcase></testsuite></testsuites>
