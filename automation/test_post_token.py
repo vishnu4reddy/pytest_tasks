@@ -6,7 +6,8 @@ payload={
 }
 def testpost():
     resp = requests.post("https://reqres.in/api/register",data=payload)
-    # data = json.loads(open("data.json","r").read()))
+    # data = json.loads(open("data.json","r").read())
     print(resp)
     print(resp.json()["id"])
     assert resp.json()['token']== 'QpwL5tke4Pnpja7X4'
+    # assert resp.json()["password"]== "pistol"
