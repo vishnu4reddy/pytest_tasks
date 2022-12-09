@@ -1,29 +1,7 @@
-import pytest
-
-
-# Arrange
-@pytest.fixture
-def first_entry():
-    return "a"
-
-
-# Arrange
-@pytest.fixture
-def order(first_entry):
-    return [first_entry]
-
-
-def test_string(order):
-    # Act
-    order.append("b")
-
-    # Assert
-    assert order == ["a", "b"]
-
-
-def test_int(order):
-    # Act
-    order.append(2)
-
-    # Assert
-    assert order == ["a", 2]
+# 
+def setup_function(function):
+    print("setting up", function)
+def test_func1():
+    assert True
+def test_func2():
+    assert False

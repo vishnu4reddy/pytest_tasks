@@ -10,8 +10,7 @@ def testpost():
     print(resp.content)
     print(resp.json()["id"])
     assert resp.json()['token']== 'QpwL5tke4Pnpja7X4'
-    # assert resp.json()["password"]== "pistol"
-    # assert resp["data"]["email"]== "pistol"
-    # assert 
+    print(data["password"])== "pistol"
+    assert (data["password"])== "pistol"
     print(data["email"])
     assert (data["email"]) == "eve.holt@reqres.in"
